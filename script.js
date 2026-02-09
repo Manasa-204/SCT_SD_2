@@ -1,4 +1,14 @@
-let r=Math.floor(Math.random()*10)+1;
+function reset() {
+    r = Math.floor(Math.random() * 10) + 1;
+    attempts = 0;
+    guess = false;
+
+    document.getElementById("guess").value = "";
+    document.getElementById("guess").disabled = false;
+    document.getElementById("message").textContent = "";
+    document.getElementById("attempts").textContent = "";
+}
+let r=Math.floor(Math.random()*30)+1;
 let guess=false;
 let attempts=0;
 let maxattempts=5;
@@ -28,5 +38,5 @@ function checkguess(){
         if (!guess && attempts == maxattempts) {
             document.getElementById("message").textContent =
                 "😞 Oops! Better luck next time. The number was " + r;
-        }
     }
+}

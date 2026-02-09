@@ -5,8 +5,8 @@ public class Task {
         int r=(int)(Math.random()*10)+1;
         boolean guess=false;
         int count =1;
-        for(int i=0;i<3;i++){
-            System.out.println("Enter the number you guess(from 1 to 10)");
+        for(int i=0;i<5;i++){
+            System.out.println("Enter the number you guess(from 1 to 20)");
             int n=sc.nextInt();
             if(rnd(n,r,count)){
                 guess=true;
