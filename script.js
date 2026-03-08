@@ -1,5 +1,5 @@
 function reset() {
-    r = Math.floor(Math.random() * 10) + 1;
+    r = Math.floor(Math.random() * 30) + 1;
     attempts = 0;
     guess = false;
 
